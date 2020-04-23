@@ -166,7 +166,7 @@ BEGIN Scenario
 
                         BEGIN Intervals
 
-"1 Jan 2022 17:00:00.000000000" "9 Jan 2022 17:00:00.000000000"
+"1 Jan 2022 17:00:00.000000000" "8 Jan 2022 17:00:00.000000000"
                         END Intervals
 
                     END IntervalList
@@ -180,9 +180,9 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 224
+            WindowRectLeft		 228
             WindowRectTop		 389
-            WindowRectRight		 1911
+            WindowRectRight		 1915
             WindowRectBottom		 851
         END Report
     END QuickReports
@@ -215,8 +215,8 @@ BEGIN Scenario
             LaunchWindowUseEntireTraj		 Yes
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
-            LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStart		 -5.39928e+07
+            LaunchWindowStop		 -5.45112e+07
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -427,8 +427,8 @@ BEGIN Scenario
                 Name		 Satellite
                 BEGIN Favorite
                     Type		 Graph
-                    BaseDir		 User
-                    Style		 Altitude
+                    BaseDir		 Install
+                    Style		 Classical Orbit Elements
                 END Favorite
                 BEGIN Favorite
                     Type		 Report
@@ -437,8 +437,8 @@ BEGIN Scenario
                 END Favorite
                 BEGIN Favorite
                     Type		 Graph
-                    BaseDir		 Install
-                    Style		 Classical Orbit Elements
+                    BaseDir		 User
+                    Style		 Altitude
                 END Favorite
             END Class
         END ReportFavorites
@@ -643,12 +643,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1206,15 +1200,6 @@ BEGIN Scenario
         END Gator
 
         BEGIN Crdn
-            BEGIN EVENT
-                Type		 EVENT_DATECONSTANT
-                Name		 Today
-                Hardcoded		
-                Description		 Local midnight today.
-                LocalOffsetWholeDays		 0
-                LocalOffsetTime		  0.0000000000000000e+00
-                ComputedDate		 17 Apr 2020 07:00:00.000000000
-            END EVENT
         END Crdn
 
         BEGIN SpiceExt

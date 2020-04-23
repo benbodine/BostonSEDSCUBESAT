@@ -1,7 +1,7 @@
 <!-- STKv4.0 Format="XML" -->
 <STKOBJECT>
 <OBJECT Class = "EngineModel" Name = "Electrospray">
-    <OBJECT Class = "double" Name = "Acceleration"> 9.000000000000001e-05 m*sec^-2 </OBJECT>
+    <OBJECT Class = "double" Name = "Acceleration"> 5.999999999999999e-05 m*sec^-2 </OBJECT>
     <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
     <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
     <OBJECT Class = "string" Name = "Description"> &quot;Engine that has a constant Acceleration and Isp&quot; </OBJECT>
