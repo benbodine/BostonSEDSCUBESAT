@@ -1667,6 +1667,7 @@ BEGIN Scenario
         Class Satellite
 
             Adore		
+            Adore1		
             AdoreNoThrust		
 
         END Class
@@ -1680,6 +1681,9 @@ BEGIN Scenario
         Instance Satellite/Adore
             *		
             Satellite/Adore		
+        END Instance
+        Instance Satellite/Adore1
+            Satellite/Adore1		
         END Instance
         Instance Satellite/AdoreNoThrust
             Satellite/AdoreNoThrust		
