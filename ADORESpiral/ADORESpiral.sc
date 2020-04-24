@@ -105,31 +105,17 @@ BEGIN Scenario
     BEGIN QuickReports
 
         BEGIN Report
-            Name		 Altitude
-            Type		 Graph
-            BaseDir		 User
-            Style		 Altitude
-            AGIViewer		 No
-            BEGIN InstanceList
-                Instance		 Satellite/Adore
-                Instance		 Satellite/AdoreNoThrust
-            END InstanceList
+            Name		 Solar Panel Power
+            Type		 Report
+            BaseDir		 Install
+            Style		 Solar Panel Power
+            AGIViewer		 Yes
+            Instance		 Satellite/Adore
             BEGIN TimeData
                 BEGIN Section
-                    SectionNumber		 2
+                    SectionNumber		 1
                     SectionType		 2
                     ShowIntervals		 No
-                    BEGIN IntervalList
-
-                        DateUnitAbrv		 UTCG
-
-                        BEGIN Intervals
-
-"13 Dec 2018 17:00:00.000000000" "14 Dec 2018 03:00:00.000000000"
-                        END Intervals
-
-                    END IntervalList
-
                     TimeType		 Availability
                     SamplingType		 Default
                     TimeBound		 0
@@ -139,51 +125,10 @@ BEGIN Scenario
             FrameType		 0
             DockCircleID		 0
             DockID		 0
-            WindowRectLeft		 433
-            WindowRectTop		 233
-            WindowRectRight		 1910
-            WindowRectBottom		 695
-        END Report
-
-        BEGIN Report
-            Name		 Altitude1
-            Type		 Graph
-            BaseDir		 User
-            Style		 Altitude
-            AGIViewer		 No
-            BEGIN InstanceList
-                Instance		 Satellite/Adore
-                Instance		 Satellite/AdoreNoThrust
-            END InstanceList
-            BEGIN TimeData
-                BEGIN Section
-                    SectionNumber		 2
-                    SectionType		 2
-                    ShowIntervals		 No
-                    BEGIN IntervalList
-
-                        DateUnitAbrv		 UTCG
-
-                        BEGIN Intervals
-
-"1 Jan 2022 17:00:00.000000000" "8 Jan 2022 17:00:00.000000000"
-                        END Intervals
-
-                    END IntervalList
-
-                    TimeType		 Availability
-                    SamplingType		 Default
-                    TimeBound		 0
-                END Section
-            END TimeData
-            DisplayOnLoad		 Yes
-            FrameType		 0
-            DockCircleID		 0
-            DockID		 0
-            WindowRectLeft		 228
-            WindowRectTop		 389
-            WindowRectRight		 1915
-            WindowRectBottom		 851
+            WindowRectLeft		 1225
+            WindowRectTop		 495
+            WindowRectRight		 2890
+            WindowRectBottom		 1786
         END Report
     END QuickReports
 
@@ -427,18 +372,13 @@ BEGIN Scenario
                 Name		 Satellite
                 BEGIN Favorite
                     Type		 Graph
-                    BaseDir		 Install
-                    Style		 Classical Orbit Elements
-                END Favorite
-                BEGIN Favorite
-                    Type		 Report
                     BaseDir		 User
                     Style		 Altitude
                 END Favorite
                 BEGIN Favorite
                     Type		 Graph
-                    BaseDir		 User
-                    Style		 Altitude
+                    BaseDir		 Install
+                    Style		 Classical Orbit Elements
                 END Favorite
             END Class
         END ReportFavorites

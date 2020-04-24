@@ -489,6 +489,27 @@ BEGIN Point
     Show		 No
     Size		 5
 END Point
+SolarSmartInterval		
+BEGIN EVENTINTERVAL
+    BEGIN Interval
+        Start		 1 Jan 2022 17:00:00.000000000
+        Stop		 8 Jan 2022 17:00:00.000000000
+    END Interval
+    IntervalState		 Explicit
+END EVENTINTERVAL
+
+UseSolarToolOnjIntvl		 No
+SolarStartTime		 0
+SolarStopTime		 604800
+SolarTimeStep		 72
+SolarGroupName		 Minus-X
+SolarGroupName		 Plus-Z
+SolarGroupName		 Minus-Y
+SolarGroupName		 Minus-Z
+SolarGroupName		 Plus-Y
+UseSolarToolBoundRadius		 No
+SolarPowerEquation		 Basic
+SolarToolBoundRadius		 1
 UseLabelOffset		 Yes
 LabelOffsetInPixels		 Yes
 LabelXYZ		 5 -4 10
