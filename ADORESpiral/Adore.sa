@@ -9258,6 +9258,32 @@ BEGIN Satellite
         BEGIN Crdn
             BEGIN VECTOR
                 Type		 VECTOR_TOVECTOR
+                Name		 Adore1
+                Description		 Displacement vector to Adore1
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Satellite/Adore1
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
                 Name		 AdoreNoThrust
                 Description		 Displacement vector to AdoreNoThrust
                 Origin		

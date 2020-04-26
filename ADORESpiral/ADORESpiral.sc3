@@ -680,6 +680,10 @@ BEGIN SceneWindow
         RubberBandLineWidth		 2
         RubberBandCrosshairSize		 16
         RubberBandRGB		 0.66 0.66 0.66
+        _AGI_PIBEGINTYPEMGR3DSCENEDATA
+            BEGIN 3dScene
+            END
+        END
         BEGIN View
             ViewName		 STKVOInitialView
             ViewTime		 -5.39928e+07
@@ -721,9 +725,9 @@ BEGIN SceneWindow
             UseLayer		 Yes
             FromName		 "Earth"
             FromRegPosAttView		 "Point"
-            FromPosition		  3.4533896014965624e+07  6.1643435699434886e+06  0.0000000000000000e+00
-            FromOffset		  3.4533896014965624e+07  6.1643435699434886e+06  0.0000000000000000e+00
-            FromOffsetLLR		  0.0000000000000000e+00  1.7664084434241395e-01  3.5079753500000000e+07
+            FromPosition		  3.4470126929555215e+07  6.5083461299475012e+06  2.0220221045156833e+05
+            FromOffset		  3.4470126929555215e+07  6.5083461299475012e+06  2.0220221045156833e+05
+            FromOffsetLLR		  5.7641035062266331e-03  1.8661432004265757e-01  3.5079753499999993e+07
             ToName		 "Earth"
             ToRegPosAttView		 "Point"
             ToPosition		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
@@ -731,9 +735,9 @@ BEGIN SceneWindow
             ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ConstantDistanceType		 None
             ConstantDistanceValue		 1
-            UpVector		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
-            ViewRad		  3.5079753500000000e+07
-            ViewQuat		  8.8205643082757759e-02  0.0000000000000000e+00  0.0000000000000000e+00 -9.9610228617765817e-01
+            UpVector		 -5.6639959001283362e-03 -1.0694258791670321e-03  9.9998338760138039e-01
+            ViewRad		  3.5079753499999993e+07
+            ViewQuat		  9.3171439788694993e-02  2.8695109831735964e-03  2.6852565486144007e-04 -9.9564590925107088e-01
             ViewCoordSystem		 From
             ViewFromToMode		 FromTo
             ViewToCBIMtx		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
@@ -747,7 +751,7 @@ BEGIN SceneWindow
             MinAngleToUpAxis		  8.7266462599716477e-03
             InitUpAxisUp		 Yes
             TempUpAxisUp		 Yes
-            CrossAxis		  1.7572368545701122e-01 -9.8443952905671428e-01  0.0000000000000000e+00
+            CrossAxis		  1.8553306684392520e-01 -9.8263802140334866e-01  0.0000000000000000e+00
             DefaultOffset		  3.5079753500000000e+07
             BaseDefaultOffset		  6.3781370000000000e+06
         END View

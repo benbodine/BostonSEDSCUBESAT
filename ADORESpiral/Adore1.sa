@@ -3427,6 +3427,395 @@ BEGIN Satellite
         END Identification
 
         BEGIN Crdn
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver1_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_1
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver2_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_2
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver3_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_3
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver4_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_4
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver5_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_5
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver6_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_6
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_INTEGRAL
+                Name		 Maneuver7_Consumption_Calc
+                Description		 Power use of thruster firings
+                Scalar		
+                BEGIN CALCSCALAR
+                    Type		 CALCSCALAR_LINKTO
+                    Name		 Thruster_P_Consumption
+                END CALCSCALAR
+                RefInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 MCSEphemerisSegments.Sequence_Maneuver_Block_7
+                END EVENTINTERVAL
+                TimeBoundsType		 Yes
+                StopOffset		  3.6000000000000000e+02
+                StartOffset		 -3.6000000000000000e+02
+                TimeStatType		 StaticIntegral
+                TimeStatPerInterval		 No
+                KeepBetweenIntervals		 Yes
+                Interpolation		
+                BEGIN INTERP
+                    Method		 Lagrange
+                    Order		 5
+                    FixedStep		 No
+                    StepSize		  6.0000000000000000e+01
+                    AttitudeMethod		 Lagrange
+                    AttitudeOrder		 2
+                    AttitudeFixedStep		 No
+                    AttitudeStepSize		  1.0000000000000000e+01
+                END INTERP
+                Sampling		
+                BEGIN SAMPLING
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Integration		
+                BEGIN INTEGRAL
+                    Method		 Simpson
+                    Tolerance		  1.0000000000000000e-03
+                    MaxIterations		 1000
+                END INTEGRAL
+                SaveDataType		 Yes
+            END CALCSCALAR
+            BEGIN CALCSCALAR
+                Type		 CALCSCALAR_CONSTANT
+                Name		 Thruster_P_Consumption
+                Description		 Thruster power consumption
+                Value		 -5.0000000000000000e+00
+            END CALCSCALAR
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
+                Name		 Adore
+                Description		 Displacement vector to Adore
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Satellite/Adore
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
             BEGIN VECTOR
                 Type		 VECTOR_TOVECTOR
                 Name		 AdoreNoThrust
