@@ -1683,6 +1683,7 @@ BEGIN Scenario
             Satellite/Adore		
         END Instance
         Instance Satellite/Adore1
+            *		
             Satellite/Adore1		
         END Instance
         Instance Satellite/AdoreNoThrust

@@ -502,11 +502,11 @@ UseSolarToolOnjIntvl		 No
 SolarStartTime		 0
 SolarStopTime		 604800
 SolarTimeStep		 72
-SolarGroupName		 Minus-X
-SolarGroupName		 Plus-Z
-SolarGroupName		 Minus-Y
-SolarGroupName		 Minus-Z
 SolarGroupName		 Plus-Y
+SolarGroupName		 Minus-X
+SolarGroupName		 Minus-Z
+SolarGroupName		 Minus-Y
+SolarGroupName		 Plus-Z
 UseSolarToolBoundRadius		 No
 SolarPowerEquation		 Basic
 SolarToolBoundRadius		 1
