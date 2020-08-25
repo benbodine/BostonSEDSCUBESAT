@@ -1,0 +1,273 @@
+stk.v.12.0
+WrittenBy    STK_v12.0.0
+
+BEGIN Sensor
+
+    Name		 Sensor1
+
+    BEGIN Pattern
+
+        BEGIN SimpleCone
+
+            ConeAngle		  1.0000000000000000e+00
+            AngularPatternResolution		  4.0000000000000000e+00
+
+        END SimpleCone
+
+        DetailedTerrainHorizon		 Yes
+
+
+    END Pattern
+
+    BEGIN Pointing
+
+        BEGIN Targeted
+
+            TargetMode		 Tracking
+            Sequence		 323
+            TrackingMode		 Both
+            AberrationType		 Annual
+            TimeDelayConvergence		 5e-05
+            MaxTimeStep		 360
+            MinTimeStep		 0.01
+            TimeConvergence		 0.005
+            AbsValueConvergence		 1e-14
+            RelValueConvergence		 1e-08
+            DetectEventsUsingSamplesOnly		 No
+
+            BEGIN AssignedTargets
+
+                Satellite/ADORE
+
+            END AssignedTargets
+
+            BEGIN TargetInviews
+
+                Satellite/ADORE 2020-08-24T16:31:52.846407988 2020-08-24T16:35:09.737448167
+                Satellite/ADORE 2020-08-25T09:09:41.586965891 2020-08-25T09:14:57.354315866
+                Satellite/ADORE 2020-08-25T10:47:12.143888882 2020-08-25T10:50:48.942785791
+                Satellite/ADORE 2020-08-25T12:25:23.177956479 2020-08-25T12:27:05.209330714
+                Satellite/ADORE 2020-08-25T14:01:06.985653577 2020-08-25T14:05:34.974200873
+                Satellite/ADORE 2020-08-25T15:37:22.226111653 2020-08-25T15:42:11.429773742
+                Satellite/ADORE 2020-08-26T08:16:04.899929938 2020-08-26T08:20:54.777564897
+                Satellite/ADORE 2020-08-26T09:52:42.194334804 2020-08-26T09:57:09.595869006
+                Satellite/ADORE 2020-08-26T11:31:11.985733334 2020-08-26T11:32:53.607205221
+                Satellite/ADORE 2020-08-26T13:07:27.610526394 2020-08-26T13:11:05.159415173
+                Satellite/ADORE 2020-08-26T14:43:19.421194525 2020-08-26T14:48:35.101536468
+                Satellite/ADORE 2020-08-27T07:23:05.814363453 2020-08-27T07:26:24.795606864
+                Satellite/ADORE 2020-08-27T08:58:24.072761016 2020-08-27T09:03:26.953949719
+                Satellite/ADORE 2020-08-27T10:36:37.884673195 2020-08-27T10:39:06.347261781
+                Satellite/ADORE 2020-08-27T12:13:48.586983066 2020-08-27T12:16:28.093219468
+                Satellite/ADORE 2020-08-27T13:49:28.927565907 2020-08-27T13:54:36.329731415
+                Satellite/ADORE 2020-08-27T15:26:47.366296536 2020-08-27T15:29:32.148677316
+                Satellite/ADORE 2020-08-28T08:04:21.755955755 2020-08-28T08:09:38.091840292
+                Satellite/ADORE 2020-08-28T09:42:00.163414198 2020-08-28T09:45:26.882412192
+                Satellite/ADORE 2020-08-28T11:20:03.854549524 2020-08-28T11:21:52.057274171
+                Satellite/ADORE 2020-08-28T12:55:45.346878803 2020-08-28T13:00:20.918521554
+                Satellite/ADORE 2020-08-28T14:32:06.573829855 2020-08-28T14:36:45.810185241
+                Satellite/ADORE 2020-08-29T07:10:40.461140963 2020-08-29T07:15:38.302050321
+                Satellite/ADORE 2020-08-29T08:47:28.544872471 2020-08-29T08:51:47.840929689
+                Satellite/ADORE 2020-08-29T10:25:58.004880953 2020-08-29T10:27:35.160852229
+                Satellite/ADORE 2020-08-29T12:02:05.577469622 2020-08-29T12:05:52.921503538
+                Satellite/ADORE 2020-08-29T13:38:00.558510343 2020-08-29T13:43:14.524176801
+                Satellite/ADORE 2020-08-30T06:17:32.182652816 2020-08-30T06:21:15.701495807
+                Satellite/ADORE 2020-08-30T07:53:08.027051954 2020-08-30T07:58:05.983798487
+                Satellite/ADORE 2020-08-30T09:31:26.423643464 2020-08-30T09:33:44.910925293
+                Satellite/ADORE 2020-08-30T11:08:26.772696138 2020-08-30T11:11:16.713139190
+                Satellite/ADORE 2020-08-30T12:44:08.382022285 2020-08-30T12:49:19.220482194
+                Satellite/ADORE 2020-08-30T14:21:48.192670745 2020-08-30T14:23:47.933700616
+                Satellite/ADORE 2020-08-31T06:59:02.580463480 2020-08-31T07:04:18.490713950
+                Satellite/ADORE 2020-08-31T08:36:48.386711509 2020-08-31T08:40:04.832531863
+                Satellite/ADORE 2020-08-31T10:14:43.858008859 2020-08-31T10:16:39.511555848
+                Satellite/ADORE 2020-08-31T11:50:23.827198421 2020-08-31T11:55:06.462162528
+                Satellite/ADORE 2020-08-31T13:26:51.841819344 2020-08-31T13:31:18.955695874
+
+            END TargetInviews
+
+            SaveTargetAccesses		 Yes
+
+            UseTargetSchedule		 No
+
+            BEGIN Stable
+                Use		 No
+                Mode		 NorthStable
+            END Stable
+            AdjustPointingToTargetsDuringAccessToTargets		 No
+            UseTrackControl		 No
+
+        END Targeted
+
+    END Pointing
+
+    BEGIN Optics
+
+        FocalLength		  1.0000000000000000e+02
+        DetectorPitch		  1.0000000000000000e-03
+        IQConstant		  0.0000000000000000e+00
+        GsdCoefficient		  0.0000000000000000e+00
+
+    END Optics
+
+    BEGIN Extensions
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            FieldOfView IncludeIntervals
+            LineOfSight IncludeIntervals
+            ElevationAngle            Min		  1.0000000000000000e+01 IncludeIntervals
+            Range            Max		  1.2000000000000000e+06 IncludeIntervals
+
+            UsePreferredMaxStep No
+            PreferredMaxStep 360
+        END AccessConstraints
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
+        END Desc
+
+        BEGIN Refraction
+            RefractionModel		 Effective Radius Method
+
+            UseRefractionInAccess		 No
+
+            BEGIN ModelData
+                RefractionCeiling		  5.0000000000000000e+03
+                MaxTargetAltitude		  1.0000000000000000e+04
+                EffectiveRadius		  1.3333333333333299e+00
+
+                UseExtrapolation		 Yes
+
+
+            END ModelData
+        END Refraction
+
+        BEGIN Crdn
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
+                Name		 ADORE
+                Description		 Displacement vector to ADORE
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Satellite/ADORE
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
+        END Crdn
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                Inherit		 Yes
+                Show		 Yes
+                LineStyle		 0
+                LineWidth		 1
+                PatternColor		 #ffffff
+
+            END Attributes
+
+            BEGIN Display
+
+                NumberOfPatterns		 1
+                PersistenceDuration		  0.0000000000000000e+00
+                PersistenceIgnoreDefChg		 No
+                UpdatesDefnOften		 No
+                MinDisplayAltitude		  0.0000000000000000e+00
+                MaxDisplayAltitude		  1.0000000000000000e+07
+                AltitudeIntersectSense		 InsideOut
+                ShowBothAltCrossings		 No
+                IntersectType		 CentralBody
+                ShowGround		 Yes
+                UseProjectionRadii		 Yes
+                ExcludeHorizonArcs		 No
+                ForwardPersist		 No
+                FillPersist		 No
+                DsplyTmHidesPersist		 No
+                SpaceLength		  5.0000000000000000e+07
+                TgtExtLength		  0.0000000000000000e+00
+                FOVHalfAngle		 No
+                HalfAngle		  0.0000000000000000e+00
+                ProjDisplay		 Sphere
+                DisplayType		 ConstantRadius
+                DisplayFOVWithConstraints		 No
+                ShowBoresight		 No
+                BoresightMarker		 4
+                BoresightColor		 #ffffff
+                ShowFill		 No
+                FillTranslucency		 0.5
+                ShowOn2DMap		 Yes
+
+            END Display
+
+            BEGIN Swath
+
+                MaxStep		  6.0000000000000000e+01
+                MinStep		  1.0000000000000001e-01
+                CloseSwath		 Yes
+                Tolerance		  4.0000000000000000e+00
+                MatchTolerance		  9.0000000000000000e+01
+                ShowSwath		 No
+                ComputationalMethod		 Numerical
+                Color		 #ffffff
+                LineStyle		 0
+                LineWidth		 1
+                SwathIntervalPtr		
+                BEGIN EVENTINTERVAL
+                    BEGIN Interval
+                        Start		 24 Aug 2020 16:00:00.000000000
+                        Stop		 31 Aug 2020 16:00:00.000000000
+                    END Interval
+                    IntervalState		 Explicit
+                END EVENTINTERVAL
+
+
+            END Swath
+
+            BEGIN DisplayTimes
+                DisplayType		 AlwaysOn
+            END DisplayTimes
+        END Graphics
+
+        BEGIN Swath
+        END Swath
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+    END SubObjects
+
+END Sensor
+
